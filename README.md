@@ -13,10 +13,10 @@
 -  Router and Navigation :thumbsup:
 -  Updating `Header component` to support navigation :thumbsup:
 
-## Commit 4
+## Commit 4 :heavy_check_mark:
 -  Layout Design - Header, Footer, and MainLayout :thumbsup:
 -  Form Design - (card number, type (system), cvc*, expiry*, color) :thumbsup:
--  Cards Listing Design
+-  Cards Listing Design :thumbsup:
 
 ## Commit 5
 -  Credit Card model
