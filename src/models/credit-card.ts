@@ -14,7 +14,7 @@ class CreditCardModel {
     color?: string,
     cardType?: string
   ) {
-    this.id = Math.random.toString();
+    this.id = Math.random().toString();
     this.cardNumber = cardNumber;
     this.cvc = cvc;
     this.expiry = expiry;

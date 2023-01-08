@@ -14,7 +14,7 @@ const CardComponent: FC<{ item: CreditCardModel }> = (props) => {
     <Card>
       <CardHeader>
         <CardIcon>{props.item.cardType}</CardIcon>
-        <CardTitle id={`title-${props.item.id}`}></CardTitle>
+        <CardTitle id={`title-${props.item.id}`}>{props.item.cardNumber}</CardTitle>
       </CardHeader>
       <CardBody>
         <div>

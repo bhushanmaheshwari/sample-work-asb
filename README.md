@@ -24,10 +24,11 @@
 
 ## Commit 6
 -  Card Listing - Dynamic `mapping` from context api :thumbsup:
--  New Card Form - Calling Context API 
--  `CRUD` operation
+-  New Card Form - Calling Context API :thumbsup:
+-  `CRUD` operation (adding toggle | archive feature)
 
 ## Commit 7
+-  Card Listing - `Styling` and CSS
 -  Forms - Dynamic Credit `Card Type`
 -  Forms - Dynamic `Color` Picker
 
