@@ -14,6 +14,7 @@
 -  Updating `Header component` to support navigation :thumbsup:
 
 ## Commit 4
+-  Layout Design - Header, Footer, and MainLayout :thumbsup:
 -  Form Design - (card number, type (system), cvc*, expiry*, color)
 -  Cards Listing Design
 
