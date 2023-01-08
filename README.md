@@ -1,4 +1,4 @@
-# Plan for commiting the changes (in progress document)
+# Plan for commiting the changes for this sample work
 
 ## Commit 1 :heavy_check_mark:
 
@@ -57,9 +57,10 @@
 
 - DevOps - `code deployment` to Azure Static website :thumbsup:
 
-## Commit 12
+## Commit 12 : (in progress)
 
 - Implement `Unit Tests` using `jest`
+- Added one test suite with one test case for NewCard.test.tsx :thumbsup:
 
 ## Commit 13
 
