@@ -7,6 +7,13 @@ const HeaderNav = styled.ul`
   gap: 10px;
   text-decoration: none;
   list-style: none;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform : uppercase;
+  }
 `;
 
 export { Header, HeaderNav };
