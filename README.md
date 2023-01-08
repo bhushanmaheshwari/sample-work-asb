@@ -48,10 +48,10 @@
 - Adding AuthContext to the application :thumbsup:
 - Integrating AuthContext with header :thumbsup:
 
-## Commit 10
+## Commit 10 :heavy_check_mark:
 
-- UX writing - Banner component - :thumbsup:
-- CSS and `Responsive` behavior
+- UX writing - Banner component :thumbsup:
+- CSS and `Responsive` behavior :thumbsup:
 
 ## Commit 11 :heavy_check_mark:
 

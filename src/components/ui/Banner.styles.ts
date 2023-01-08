@@ -13,6 +13,7 @@ const BannerTitle = styled.div`
 
 const BannerSubTitle = styled.div`
   font-size: 18px;
+  padding: 0 2rem;
 `;
 
 export { Banner, BannerTitle, BannerSubTitle };
