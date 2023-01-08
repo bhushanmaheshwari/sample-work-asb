@@ -6,4 +6,14 @@ const Cards = styled.div`
   justify-content: center;
 `;
 
-export { Cards };
+const AddCard = styled.div`
+  border: 1px solid #ccc;
+  width: 200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+`;
+
+export { Cards, AddCard };

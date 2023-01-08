@@ -7,14 +7,21 @@ import {
   CardTitle,
   CardBody,
   CardFooter,
+  Archived,
 } from "./Card.styles";
 
 const CardComponent: FC<{
   item: CreditCardModel;
   onToggleCreditCard: () => void;
 }> = (props) => {
+  const username = "GUEST";
+
   return (
-    <Card onClick={props.onToggleCreditCard}>
+    <Card
+      colorCode={props.item.color}
+      archived={props.item.archived}
+      onClick={props.onToggleCreditCard}
+    >
       <CardHeader>
         <CardIcon>{props.item.cardType}</CardIcon>
         <CardTitle id={`title-${props.item.id}`}>
@@ -29,7 +36,10 @@ const CardComponent: FC<{
           CVC : <b>{props.item.cvc}</b>
         </div>
       </CardBody>
-      <CardFooter>{props.item.archived ? "Archived" : "Active"}</CardFooter>
+      <CardFooter>
+        <div>{username}</div>
+        <div>{props.item.archived && <Archived>Archived</Archived>}</div>
+      </CardFooter>
     </Card>
   );
 };

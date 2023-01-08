@@ -28,7 +28,7 @@
 -  `CRUD` operation (adding toggle | archive feature)  :thumbsup:
 
 ## Commit 7
--  Card Listing - `Styling` and CSS
+-  Card Listing - `Styling` and CSS  :thumbsup:
 -  Forms - Dynamic Credit `Card Type`
 -  Forms - Dynamic `Color` Picker
 
