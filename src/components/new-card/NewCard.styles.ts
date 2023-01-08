@@ -24,13 +24,20 @@ const FormControl = styled.div`
     display: block;
     width: 100%;
     color: #494844;
-    background-color:#fff;
+    background-color: #fff;
     padding: 0.5rem 0;
     outline: 0;
     border: none;
     border-bottom: 1px solid #494844;
     font: inherit;
     margin-bottom: 0.5rem;
+  }
+
+  input.error {
+    border-color: red;
+    color: red;
+    background-color: #ffefff;
+    padding: 10px;
   }
 `;
 
@@ -54,12 +61,22 @@ const FormActions = styled.div`
 
 const FormCardIcon = styled.div`
   img {
-      width : 50px;
-      height : 33px;
-      float: right;
-      position: relative;
-      top : -40px;
+    width: 50px;
+    height: 33px;
+    float: right;
+    position: relative;
+    top: -40px;
   }
 `;
 
-export { FormContainer, FormControl, FormActions, FormCardIcon };
+const FormControlError = styled.div`
+  color: red;
+`;
+
+export {
+  FormContainer,
+  FormControl,
+  FormActions,
+  FormCardIcon,
+  FormControlError,
+};

@@ -16,22 +16,4 @@ const CARDICON: any = {
   JCB: JCB_ICON,
 };
 
-// copied
-const regexPattern: any = {
-  MASTERCARD: /^5[1-5][0-9]{1,}|^2[2-7][0-9]{1,}$/,
-  VISA: /^4[0-9]{2,}$/,
-  AMERICAN_EXPRESS: /^3[47][0-9]{5,}$/,
-  DISCOVER: /^6(?:011|5[0-9]{2})[0-9]{3,}$/,
-  DINERS_CLUB: /^3(?:0[0-5]|[68][0-9])[0-9]{4,}$/,
-  JCB: /^(?:2131|1800|35[0-9]{3})[0-9]{3,}$/,
-};
-
-//copied
-export const findCardType = (cardNumber: string): string => {
-  for (const card in regexPattern) {
-    if (cardNumber.replace(/[^\d]/g, "").match(regexPattern[card])) return card;
-  }
-  return "";
-};
-
 export default CARDICON;

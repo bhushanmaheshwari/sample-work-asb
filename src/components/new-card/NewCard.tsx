@@ -1,7 +1,13 @@
-import { FC, FormEvent, useContext, useReducer } from "react";
+import { FC, FormEvent, useContext, useReducer, useState } from "react";
 import { useNavigate } from "react-router";
 import CreditCardModel from "../../models/credit-card";
-import CARDICON, { findCardType } from "../../models/credit-card-type";
+import CARDICON from "../../models/credit-card-type";
+import {
+  findCardType,
+  validateCardNumber,
+  validateCvc,
+  validateExpiry,
+} from "./../../validations/new-card.validation";
 import { AppContext } from "../../store/app-context";
 import ColorPickerComponent from "../ui/ColorPicker";
 import {
@@ -9,6 +15,7 @@ import {
   FormControl,
   FormActions,
   FormCardIcon,
+  FormControlError,
 } from "./NewCard.styles";
 
 enum ActionType {
@@ -45,6 +52,11 @@ const reducer = (
 const NewCardComponent: FC = () => {
   const appCtx = useContext(AppContext);
   const navigate = useNavigate();
+  const [error, setError] = useState({
+    cardNumber: false,
+    cvc: false,
+    expiry: false,
+  });
 
   const [state, dispatch] = useReducer(
     reducer,
@@ -53,7 +65,9 @@ const NewCardComponent: FC = () => {
 
   const onSubmitHandler = (e: FormEvent) => {
     e.preventDefault();
-    console.log(state);
+    if (error.cardNumber || error.cvc || error.expiry) {
+      return;
+    }
     appCtx.addCreditCard(state);
     navigate("/cards");
   };
@@ -66,17 +80,34 @@ const NewCardComponent: FC = () => {
     const val = e.target.value;
     const cardType: string = findCardType(val);
 
+    const validCard = validateCardNumber(val);
+    setError((prevState) => {
+      return { ...prevState, cardNumber: !validCard };
+    });
+
     dispatch({ type: ActionType.CARD_TYPE, data: cardType });
     dispatch({ type: ActionType.CARD_NUMBER, data: val });
   };
 
   const onCvcChangeHandler = (e: any) => {
     const val = e.target.value;
+
+    const validCvc = validateCvc(val);
+    setError((prevState) => {
+      return { ...prevState, cvc: !validCvc };
+    });
+
     dispatch({ type: ActionType.CVC, data: val });
   };
 
   const onExpiryChangeHandler = (e: any) => {
     const val = e.target.value;
+
+    const validExpiry = validateExpiry(val);
+    setError((prevState) => {
+      return { ...prevState, expiry: !validExpiry };
+    });
+
     dispatch({ type: ActionType.EXPIRY, data: val });
   };
 
@@ -90,6 +121,7 @@ const NewCardComponent: FC = () => {
         <FormControl>
           <label>Card Number</label>
           <input
+            className={error.cardNumber ? "error" : ""}
             type="text"
             id="txtCardNumber"
             placeholder="Enter your credit/debit card number"
@@ -101,26 +133,43 @@ const NewCardComponent: FC = () => {
               <img src={CARDICON[state.cardType]} alt={state.cardType} />
             </FormCardIcon>
           )}
+          {error.cardNumber && (
+            <FormControlError>
+              Please enter a valid card number
+            </FormControlError>
+          )}
         </FormControl>
         <FormControl>
           <label>CVC</label>
           <input
+            className={error.cvc ? "error" : ""}
             type="text"
-            id="txtCardNumber"
+            id="txtCvc"
             placeholder="Enter your 3-digit security code"
             onChange={onCvcChangeHandler}
             onBlur={onCvcChangeHandler}
           />
+          {error.cvc && (
+            <FormControlError>
+              Please enter valid 3 digit security code
+            </FormControlError>
+          )}
         </FormControl>
         <FormControl>
           <label>Expiry</label>
           <input
+            className={error.expiry ? "error" : ""}
             type="text"
-            id="txtCardNumber"
+            id="txtExpiry"
             placeholder="Enter expiry date in MM/YY format"
             onChange={onExpiryChangeHandler}
             onBlur={onExpiryChangeHandler}
           />
+          {error.expiry && (
+            <FormControlError>
+              Please enter date in the format of MM/YY
+            </FormControlError>
+          )}
         </FormControl>
 
         <FormControl>

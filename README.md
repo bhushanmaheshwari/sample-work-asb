@@ -26,25 +26,27 @@
 - Credit Card model :thumbsup:
 - Store set up for App Content `context api` :thumbsup:
 
-## Commit 6
+## Commit 6 :heavy_check_mark:
 
 - Card Listing - Dynamic `mapping` from context api :thumbsup:
 - New Card Form - Calling Context API :thumbsup:
 - `CRUD` operation (adding toggle | archive feature) :thumbsup:
 
-## Commit 7
+## Commit 7 :heavy_check_mark:
 
 - Card Listing - `Styling` and CSS :thumbsup:
 - Forms - Dynamic Credit `Card Type` :thumbsup:
 - Forms - Dynamic `Color` Picker - `generic ui component` :thumbsup:
 
-## Commit 8
+## Commit 8 :heavy_check_mark:
 
-- Forms - Validations - `required and valid` inputs
+- Forms - Validations - `required and valid` inputs :thumbsup:
 
 ## Commit 9
 
 - Integration with Firebase `authentication`
+- Adding AuthContext to the application
+- Derive dynamic data from firebase's realtime database
 
 ## Commit 10
 
