@@ -7,10 +7,20 @@ import { Cards } from "./Cards.styles";
 const CardsComponent: FC = () => {
   const appCtx = useContext(AppContext);
 
+  const onToggleCreditCardHandler = (id: string) => {
+    appCtx.toggleCreditCard(id);
+  };
+
   return (
     <Cards>
       {appCtx.items.map((card: CreditCardModel) => {
-        return <CardComponent item={card} key={card.id} />;
+        return (
+          <CardComponent
+            onToggleCreditCard={onToggleCreditCardHandler.bind(null, card.id)}
+            item={card}
+            key={card.id}
+          />
+        );
       })}
     </Cards>
   );

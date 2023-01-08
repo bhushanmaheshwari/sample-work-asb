@@ -25,7 +25,7 @@
 ## Commit 6
 -  Card Listing - Dynamic `mapping` from context api :thumbsup:
 -  New Card Form - Calling Context API :thumbsup:
--  `CRUD` operation (adding toggle | archive feature)
+-  `CRUD` operation (adding toggle | archive feature)  :thumbsup:
 
 ## Commit 7
 -  Card Listing - `Styling` and CSS
