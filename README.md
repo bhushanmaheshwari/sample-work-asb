@@ -5,31 +5,31 @@
 
 #### Guest Mode - Home Page
 <kbd>
-<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+<img src="https://github.com/bhushanmaheshwari/sample-work-asb/blob/0bc9d8746ef3b5595263ebf2697ace9b27390319/public/screenshots/guest-homepage.png" />
 </kbd>
 <br/>
 
 #### Guest Mode - Wallet
 <kbd>
-<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+<img src="https://github.com/bhushanmaheshwari/sample-work-asb/blob/0bc9d8746ef3b5595263ebf2697ace9b27390319/public/screenshots/guest-wallet.png" />
 </kbd>
 <br/>
 
 #### LoggedIn Mode - Home Page
 <kbd>
-<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+<img src="https://github.com/bhushanmaheshwari/sample-work-asb/blob/0bc9d8746ef3b5595263ebf2697ace9b27390319/public/screenshots/loggedin-homepage.png" />
 </kbd>
 <br/>
 
 #### LoggedIn Mode - Wallet
 <kbd>
-<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+<img src="https://github.com/bhushanmaheshwari/sample-work-asb/blob/0bc9d8746ef3b5595263ebf2697ace9b27390319/public/screenshots/loggedin-wallet.png" />
 </kbd>
 <br/>
 
 #### Form Validation
 <kbd>
-<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+<img src="https://github.com/bhushanmaheshwari/sample-work-asb/blob/0bc9d8746ef3b5595263ebf2697ace9b27390319/public/screenshots/validation-add-card.png" />
 </kbd>
 <br/>
 
