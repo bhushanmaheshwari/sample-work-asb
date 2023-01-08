@@ -53,9 +53,9 @@
 - UX writing - Banner component - :thumbsup:
 - CSS and `Responsive` behavior
 
-## Commit 11
+## Commit 11 :heavy_check_mark:
 
-- DevOps - `code deployment` to Azure Static website
+- DevOps - `code deployment` to Azure Static website :thumbsup:
 
 ## Commit 12
 
