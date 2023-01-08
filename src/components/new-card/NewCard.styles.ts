@@ -24,6 +24,7 @@ const FormControl = styled.div`
     display: block;
     width: 100%;
     color: #494844;
+    background-color:#fff;
     padding: 0.5rem 0;
     outline: 0;
     border: none;
@@ -51,4 +52,14 @@ const FormActions = styled.div`
   }
 `;
 
-export { FormContainer, FormControl, FormActions };
+const FormCardIcon = styled.div`
+  img {
+      width : 50px;
+      height : 33px;
+      float: right;
+      position: relative;
+      top : -40px;
+  }
+`;
+
+export { FormContainer, FormControl, FormActions, FormCardIcon };

@@ -29,7 +29,7 @@
 
 ## Commit 7
 -  Card Listing - `Styling` and CSS  :thumbsup:
--  Forms - Dynamic Credit `Card Type`
+-  Forms - Dynamic Credit `Card Type` :thumbsup:
 -  Forms - Dynamic `Color` Picker
 
 ## Commit 8

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import CreditCardModel from "../../models/credit-card";
+import CARDICON from "../../models/credit-card-type";
 import {
   Card,
   CardHeader,
@@ -23,7 +24,9 @@ const CardComponent: FC<{
       onClick={props.onToggleCreditCard}
     >
       <CardHeader>
-        <CardIcon>{props.item.cardType}</CardIcon>
+        <CardIcon>
+          <img src={CARDICON[props.item.cardType]} alt={props.item.cardType} />
+        </CardIcon>
         <CardTitle id={`title-${props.item.id}`}>
           {props.item.cardNumber}
         </CardTitle>

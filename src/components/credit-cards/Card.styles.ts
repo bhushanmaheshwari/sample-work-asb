@@ -20,7 +20,16 @@ const CardHeader = styled.div`
   padding: 15px 0;
 `;
 
-const CardIcon = styled.div``;
+const CardIcon = styled.div`
+  img {
+    width: 50px;
+    height: 33px;
+    float: right;
+    margin-top: -30px;
+    position: relative;
+  }
+`;
+
 const CardTitle = styled.div`
   font-size: 24px;
   padding: 10px 0 5px 0;
@@ -49,5 +58,12 @@ const Archived = styled.div`
   padding: 5px;
 `;
 
-
-export { Card, CardHeader, CardIcon, CardTitle, CardBody, CardFooter, Archived };
+export {
+  Card,
+  CardHeader,
+  CardIcon,
+  CardTitle,
+  CardBody,
+  CardFooter,
+  Archived,
+};

@@ -1,13 +1,20 @@
 import { FC, FormEvent, useContext, useReducer } from "react";
 import { useNavigate } from "react-router";
 import CreditCardModel from "../../models/credit-card";
+import CARDICON, { findCardType } from "../../models/credit-card-type";
 import { AppContext } from "../../store/app-context";
-import { FormContainer, FormControl, FormActions } from "./NewCard.styles";
+import {
+  FormContainer,
+  FormControl,
+  FormActions,
+  FormCardIcon,
+} from "./NewCard.styles";
 
 enum ActionType {
   CARD_NUMBER = "card_number",
   CVC = "cvc",
   EXPIRY = "expiry",
+  CARD_TYPE = "card_type",
   RESET = "reset",
 }
 
@@ -22,8 +29,10 @@ const reducer = (
       return { ...state, cvc: action.data };
     case ActionType.EXPIRY:
       return { ...state, expiry: action.data };
+    case ActionType.CARD_TYPE:
+      return { ...state, cardType: action.data };
     case ActionType.RESET:
-      return new CreditCardModel("", "", "");
+      return new CreditCardModel("", "", "", "");
     default:
       return state;
   }
@@ -35,7 +44,7 @@ const NewCardComponent: FC = () => {
 
   const [state, dispatch] = useReducer(
     reducer,
-    new CreditCardModel("", "", "")
+    new CreditCardModel("", "", "", "")
   );
 
   const onSubmitHandler = (e: FormEvent) => {
@@ -51,6 +60,9 @@ const NewCardComponent: FC = () => {
 
   const onCardNumberChangeHandler = (e: any) => {
     const val = e.target.value;
+    const cardType: string = findCardType(val);
+
+    dispatch({ type: ActionType.CARD_TYPE, data: cardType });
     dispatch({ type: ActionType.CARD_NUMBER, data: val });
   };
 
@@ -76,6 +88,9 @@ const NewCardComponent: FC = () => {
             onChange={onCardNumberChangeHandler}
             onBlur={onCardNumberChangeHandler}
           />
+          {state.cardType && <FormCardIcon>
+            <img src={CARDICON[state.cardType]} alt={state.cardType} />
+          </FormCardIcon> }
         </FormControl>
         <FormControl>
           <label>CVC</label>
