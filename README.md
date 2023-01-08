@@ -59,7 +59,8 @@
 
 ## Commit 12
 
-- UX writing
+- UX writing - Banner component - :thumbsup:
+- UX writing - Messagebar component
 - CSS and `Responsive` behavior
 
 ## Commit 13

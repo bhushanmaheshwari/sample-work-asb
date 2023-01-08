@@ -1,6 +1,7 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import CreditCardModel from "../../models/credit-card";
 import CARDICON from "../../models/credit-card-type";
+import { AuthContext } from "../../store/auth-context";
 import {
   Card,
   CardHeader,
@@ -15,7 +16,9 @@ const CardComponent: FC<{
   item: CreditCardModel;
   onToggleCreditCard: () => void;
 }> = (props) => {
-  const username = "GUEST";
+  const authCtx = useContext(AuthContext);
+
+  const username = authCtx.userName;
 
   return (
     <Card

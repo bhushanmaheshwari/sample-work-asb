@@ -16,10 +16,10 @@ const HeaderComponent: FC = () => {
     <Header>
       <HeaderNav>
         <li>
-          <Link to="/">HOME</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/cards">CARDS</Link>
+          <Link to="/cards">Wallet</Link>
         </li>
       </HeaderNav>
       <HeaderNav>
