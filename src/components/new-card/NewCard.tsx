@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import CreditCardModel from "../../models/credit-card";
 import CARDICON, { findCardType } from "../../models/credit-card-type";
 import { AppContext } from "../../store/app-context";
+import ColorPickerComponent from "../ui/ColorPicker";
 import {
   FormContainer,
   FormControl,
@@ -15,6 +16,7 @@ enum ActionType {
   CVC = "cvc",
   EXPIRY = "expiry",
   CARD_TYPE = "card_type",
+  COLOR = "color",
   RESET = "reset",
 }
 
@@ -31,8 +33,10 @@ const reducer = (
       return { ...state, expiry: action.data };
     case ActionType.CARD_TYPE:
       return { ...state, cardType: action.data };
+    case ActionType.COLOR:
+      return { ...state, color: action.data };
     case ActionType.RESET:
-      return new CreditCardModel("", "", "", "");
+      return new CreditCardModel("", "", "", "", "");
     default:
       return state;
   }
@@ -44,7 +48,7 @@ const NewCardComponent: FC = () => {
 
   const [state, dispatch] = useReducer(
     reducer,
-    new CreditCardModel("", "", "", "")
+    new CreditCardModel("", "", "", "", "")
   );
 
   const onSubmitHandler = (e: FormEvent) => {
@@ -76,6 +80,10 @@ const NewCardComponent: FC = () => {
     dispatch({ type: ActionType.EXPIRY, data: val });
   };
 
+  const onColorSelectHandler = (color: string) => {
+    dispatch({ type: ActionType.COLOR, data: color });
+  };
+
   return (
     <FormContainer>
       <form onSubmit={onSubmitHandler}>
@@ -88,9 +96,11 @@ const NewCardComponent: FC = () => {
             onChange={onCardNumberChangeHandler}
             onBlur={onCardNumberChangeHandler}
           />
-          {state.cardType && <FormCardIcon>
-            <img src={CARDICON[state.cardType]} alt={state.cardType} />
-          </FormCardIcon> }
+          {state.cardType && (
+            <FormCardIcon>
+              <img src={CARDICON[state.cardType]} alt={state.cardType} />
+            </FormCardIcon>
+          )}
         </FormControl>
         <FormControl>
           <label>CVC</label>
@@ -111,6 +121,11 @@ const NewCardComponent: FC = () => {
             onChange={onExpiryChangeHandler}
             onBlur={onExpiryChangeHandler}
           />
+        </FormControl>
+
+        <FormControl>
+          <label>Pick Your Color</label>
+          <ColorPickerComponent onColorSelect={onColorSelectHandler} />
         </FormControl>
 
         <FormActions>
