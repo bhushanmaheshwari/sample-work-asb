@@ -15,7 +15,7 @@
 
 ## Commit 4
 -  Layout Design - Header, Footer, and MainLayout :thumbsup:
--  Form Design - (card number, type (system), cvc*, expiry*, color)
+-  Form Design - (card number, type (system), cvc*, expiry*, color) :thumbsup:
 -  Cards Listing Design
 
 ## Commit 5
