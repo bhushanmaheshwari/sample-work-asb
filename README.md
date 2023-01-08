@@ -9,8 +9,9 @@
 - Overall Structure of the Project - `Empty Shell` :thumbsup:
 - Components, Pages, Layout with styles :thumbsup:
 
-## Commit 3
--  Router and Navigation
+## Commit 3 :heavy_check_mark:
+-  Router and Navigation :thumbsup:
+-  Updating `Header component` to support navigation :thumbsup:
 
 ## Commit 4
 -  Form Design - (card number, type (system), cvc*, expiry*, color)
