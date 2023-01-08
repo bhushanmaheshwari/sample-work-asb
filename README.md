@@ -3,12 +3,35 @@
 ## Summary
 :computer: This website is live at - https://asb.needlecompass.com
 
-#### Sharing few screenshots - 
+#### Guest Mode - Home Page
+<kbd>
+<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+</kbd>
+<br/>
 
+#### Guest Mode - Wallet
+<kbd>
+<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+</kbd>
+<br/>
 
+#### LoggedIn Mode - Home Page
+<kbd>
+<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+</kbd>
+<br/>
 
+#### LoggedIn Mode - Wallet
+<kbd>
+<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+</kbd>
+<br/>
 
-
+#### Form Validation
+<kbd>
+<img src="https://github.com/bhushanmaheshwari/sample-work/blob/fad6fdc35487a803ac00219a800123509bb4d322/frontend/public/task1/need.png" />
+</kbd>
+<br/>
 
 
 ## Commits
