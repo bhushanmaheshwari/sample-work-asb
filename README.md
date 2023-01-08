@@ -42,9 +42,9 @@
 
 - Forms - Validations - `required and valid` inputs :thumbsup:
 
-## Commit 9
+## Commit 9 :heavy_check_mark:
 
-- Integration with Firebase `authentication`
+- Integration with Firebase `authentication` :thumbsup:
 - Adding AuthContext to the application
 - Derive dynamic data from firebase's realtime database
 
