@@ -5,9 +5,9 @@
 - npx `create-react-app` . --template typescript :thumbsup:
 - Readme file with tentative plan :thumbsup:
 
-## Commit 2 
-- Overall Structure of the Project - `Empty Shell`
-- Components, Pages, Layout with styles
+## Commit 2 :heavy_check_mark:
+- Overall Structure of the Project - `Empty Shell` :thumbsup:
+- Components, Pages, Layout with styles :thumbsup:
 
 ## Commit 3
 -  Router and Navigation
