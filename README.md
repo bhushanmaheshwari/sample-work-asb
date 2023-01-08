@@ -18,9 +18,9 @@
 -  Form Design - (card number, type (system), cvc*, expiry*, color) :thumbsup:
 -  Cards Listing Design :thumbsup:
 
-## Commit 5
--  Credit Card model
--  Store set up for App Content `context api`
+## Commit 5 :heavy_check_mark:
+-  Credit Card model :thumbsup:
+-  Store set up for App Content `context api` :thumbsup:
 
 ## Commit 6
 -  `CRUD` operation
