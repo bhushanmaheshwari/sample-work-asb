@@ -42,27 +42,29 @@
 
 - Forms - Validations - `required and valid` inputs :thumbsup:
 
-## Commit 9
+## Commit 9 :heavy_check_mark:
 
 - Integration with Firebase `authentication` :thumbsup:
 - Adding AuthContext to the application :thumbsup:
 - Integrating AuthContext with header :thumbsup:
-- Derive dynamic data from firebase's realtime database
 
 ## Commit 10
 
-- Implement `Unit Tests` using `jest`
+- UX writing - Banner component - :thumbsup:
+- CSS and `Responsive` behavior
 
 ## Commit 11
 
-- Accessibility
+- DevOps - `code deployment` to Azure Static website
 
 ## Commit 12
 
-- UX writing - Banner component - :thumbsup:
-- UX writing - Messagebar component
-- CSS and `Responsive` behavior
+- Implement `Unit Tests` using `jest`
 
 ## Commit 13
 
-- DevOps - `code deployment` to Azure Static website
+- Accessibility
+
+## Commit 14
+
+- Derive dynamic data from firebase's realtime database
