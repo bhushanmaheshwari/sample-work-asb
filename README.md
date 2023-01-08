@@ -23,6 +23,8 @@
 -  Store set up for App Content `context api` :thumbsup:
 
 ## Commit 6
+-  Card Listing - Dynamic `mapping` from context api :thumbsup:
+-  New Card Form - Calling Context API 
 -  `CRUD` operation
 
 ## Commit 7

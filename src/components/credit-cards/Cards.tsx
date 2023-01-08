@@ -1,13 +1,16 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import CreditCardModel from "../../models/credit-card";
+import { AppContext } from "../../store/app-context";
 import CardComponent from "./Card";
 import { Cards } from "./Cards.styles";
 
 const CardsComponent: FC = () => {
-  const temp_cards = [1, 1, 1, 1];
+  const appCtx = useContext(AppContext);
+
   return (
     <Cards>
-      {temp_cards.map((card) => {
-        return <CardComponent />;
+      {appCtx.items.map((card: CreditCardModel) => {
+        return <CardComponent item={card} key={card.id} />;
       })}
     </Cards>
   );

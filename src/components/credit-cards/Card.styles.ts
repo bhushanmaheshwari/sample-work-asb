@@ -14,4 +14,10 @@ const Card = styled.div`
   }
 `;
 
-export { Card };
+const CardHeader = styled.div``;
+const CardIcon = styled.div``;
+const CardTitle = styled.div``;
+const CardBody = styled.div``;
+const CardFooter = styled.div``;
+
+export { Card, CardHeader, CardIcon, CardTitle, CardBody, CardFooter };
