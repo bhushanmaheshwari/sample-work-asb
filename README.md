@@ -46,7 +46,7 @@
 
 - Integration with Firebase `authentication` :thumbsup:
 - Adding AuthContext to the application :thumbsup:
-- Integrating AuthContext with header
+- Integrating AuthContext with header :thumbsup:
 - Derive dynamic data from firebase's realtime database
 
 ## Commit 10
